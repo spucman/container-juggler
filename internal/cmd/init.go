@@ -3,7 +3,7 @@ package cmd
 import (
 	"log"
 
-	"github.com/sgeisbacher/container-juggler/volumeadmin"
+	"github.com/sgeisbacher/container-juggler/internal/volumeadmin"
 	"github.com/spf13/cobra"
 )
 

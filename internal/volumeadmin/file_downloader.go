@@ -10,8 +10,10 @@ import (
 	"github.com/asaskevich/govalidator"
 )
 
+// FileDownloader struct
 type FileDownloader struct{}
 
+// Download a file
 func (fd FileDownloader) Download(source string) (*os.File, error) {
 	tmpFile, err := ioutil.TempFile("", "download")
 	if err != nil {

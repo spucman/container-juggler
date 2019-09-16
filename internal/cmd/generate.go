@@ -5,7 +5,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/sgeisbacher/container-juggler/generation"
+	"github.com/sgeisbacher/container-juggler/internal/generation"
 	"github.com/spf13/cobra"
 )
 

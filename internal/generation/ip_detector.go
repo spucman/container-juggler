@@ -5,6 +5,7 @@ import (
 	"net"
 )
 
+// UplinkIPDetector defines a basic struct
 type UplinkIPDetector struct{}
 
 // Detect detects local-outbound ip-address

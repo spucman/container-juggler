@@ -12,7 +12,7 @@ import (
 	"github.com/spf13/viper"
 )
 
-const DEFAULT_TEMPLATE_PATH string = "."
+const defaultTemplatePath string = "."
 
 // FileHelper interface to provide utility-funcations for common file-operations
 type FileHelper interface {
@@ -168,7 +168,7 @@ func createEmptyComposeMap() map[string]interface{} {
 func getTemplateFolderPath() string {
 	templateFolderPath := viper.GetString("templateFolderPath")
 	if len(templateFolderPath) == 0 {
-		templateFolderPath = DEFAULT_TEMPLATE_PATH
+		templateFolderPath = defaultTemplatePath
 	}
 	return convertToFolderPath(templateFolderPath)
 }

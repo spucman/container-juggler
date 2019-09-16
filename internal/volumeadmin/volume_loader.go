@@ -8,6 +8,7 @@ import (
 	"github.com/spf13/viper"
 )
 
+// Downloader interface which defines a url to load
 type Downloader interface {
 	Download(url string) (*os.File, error)
 }
