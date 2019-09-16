@@ -1,26 +1,28 @@
 module github.com/sgeisbacher/container-juggler
 
-go 1.13
+go 1.12
 
 require (
-	github.com/asaskevich/govalidator v0.0.0-20170104211126-fdf19785fd35
-	github.com/cloudfoundry/archiver v0.0.0-20160705185641-adbf9ed80351
-	github.com/fsnotify/fsnotify v1.4.3-0.20161026203122-fd9ec7deca8b
-	github.com/hashicorp/hcl v0.0.0-20170109002515-eb6f65b2d77e
-	github.com/inconshreveable/mousetrap v1.0.0
-	github.com/magiconair/properties v1.7.1-0.20161128003514-9c47895dc1ce
-	github.com/mitchellh/mapstructure v0.0.0-20161211222315-bfdb1a85537d
+	code.cloudfoundry.org/archiver v0.0.0-20180525162158-e135af3d5a2a // indirect
+	github.com/asaskevich/govalidator v0.0.0-20190424111038-f61b66f89f4a
+	github.com/cloudfoundry/archiver v0.0.0-20180525162158-e135af3d5a2a
+	github.com/cyphar/filepath-securejoin v0.2.2 // indirect
+	github.com/golang/protobuf v1.3.2 // indirect
+	github.com/hpcloud/tail v1.0.0 // indirect
+	github.com/magiconair/properties v1.8.1 // indirect
+	github.com/onsi/ginkgo v1.10.1 // indirect
 	github.com/onsi/gomega v0.0.0-20161118205129-f1f0f388b31e
-	github.com/pelletier/go-buffruneio v0.1.0
-	github.com/pelletier/go-toml v0.4.1-0.20161229185104-439fbba1f887
-	github.com/spf13/afero v0.0.0-20170109225320-72b31426848c
-	github.com/spf13/cast v0.0.0-20161225125648-56a7ecbeb18d
-	github.com/spf13/cobra v0.0.0-20161229075922-1dd5ff2e11b6
-	github.com/spf13/jwalterweatherman v0.0.0-20170109133355-fa7ca7e836cf
-	github.com/spf13/pflag v0.0.0-20161214044949-25f8b5b07aec
-	github.com/spf13/viper v0.0.0-20161213093849-5ed0fc31f7f4
+	github.com/pelletier/go-buffruneio v0.2.0 // indirect
+	github.com/pelletier/go-toml v1.4.0 // indirect
+	github.com/pkg/errors v0.8.1 // indirect
+	github.com/spf13/afero v1.2.2 // indirect
+	github.com/spf13/cobra v0.0.5
+	github.com/spf13/jwalterweatherman v1.1.0 // indirect
+	github.com/spf13/viper v1.4.0
 	github.com/stretchr/testify v1.4.0 // indirect
-	golang.org/x/sys v0.0.0-20161214190518-d75a52659825
-	golang.org/x/text v0.0.0-20170105193844-44f4f658a783
+	golang.org/x/sys v0.0.0-20190916202348-b4ddaad3f8a3 // indirect
+	golang.org/x/text v0.3.2 // indirect
+	gopkg.in/fsnotify.v1 v1.4.7 // indirect
+	gopkg.in/tomb.v1 v1.0.0-20141024135613-dd632973f1e7 // indirect
 	gopkg.in/yaml.v2 v2.2.2
 )
