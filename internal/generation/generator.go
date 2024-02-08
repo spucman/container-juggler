@@ -7,7 +7,7 @@ import (
 	"net"
 	"strings"
 
-	yaml "gopkg.in/yaml.v2"
+	yaml "gopkg.in/yaml.v3"
 
 	"github.com/spf13/viper"
 )

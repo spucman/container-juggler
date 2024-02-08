@@ -50,6 +50,7 @@ run: build
 
 .PHONY: build-all
 build-all:
+	GOOS=darwin GOARCH=arm64 go build -o ./out/container-juggler-darwin-arm64 ./cmd/container-juggler/main.go
 	GOOS=darwin GOARCH=amd64 go build -o ./out/container-juggler-darwin-amd64 ./cmd/container-juggler/main.go
 	GOOS=linux GOARCH=amd64 go build -o ./out/container-juggler-linux-amd64 ./cmd/container-juggler/main.go
 	GOOS=windows GOARCH=amd64 go build -o ./out/container-juggler-win64.exe ./cmd/container-juggler/main.go
