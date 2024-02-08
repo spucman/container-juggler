@@ -14,7 +14,7 @@ checkstyle:
 .PHONY: lint
 lint:
 	@echo ">> try to lint"
-	@lintRes=$$(golint ./...); \
+	@lintRes=$$(golangci-lint run --color always ./...); \
 	if [ -n "$${lintRes}" ]; then \
 		echo "golint checking failed!"; echo "$${lintRes}"; echo; \
 		exit 1; \

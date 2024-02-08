@@ -117,6 +117,8 @@ container-juggler run all
 
 Because this project is using go modules you have to use at least go version 1.11
 
+To lint it locally you have to install [golangci-lint](https://github.com/golangci/golangci-lint)
+
 ## TODOS
 
 - [x] ~~detect required extra-hosts by diffing all-scenario with current-scenario~~
