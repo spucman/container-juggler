@@ -154,8 +154,8 @@ func (g Generator) exportComposeMapAsYAML(composeMap map[string]interface{}, wri
 	if err != nil {
 		return err
 	}
-	writer.Write(composeYAML)
-	return nil
+	_, err = writer.Write(composeYAML)
+	return err
 }
 
 func createEmptyComposeMap() map[string]interface{} {

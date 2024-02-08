@@ -11,10 +11,10 @@ type UplinkIPDetector struct{}
 // Detect detects local-outbound ip-address
 func (ipd UplinkIPDetector) Detect() net.IP {
 	conn, err := net.Dial("udp", "8.8.8.8:53")
-	defer conn.Close()
 	if err != nil {
 		log.Fatal(err)
 	}
+	defer conn.Close()
 
 	switch a := conn.LocalAddr().(type) {
 	case *net.IPAddr:
